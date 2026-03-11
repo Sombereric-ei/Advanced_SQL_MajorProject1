@@ -14,7 +14,7 @@ namespace WorkerSimulation
         private bool workStationRunning = true;
         private int lampFailureCounter = 0;
         /// <summary>
-        /// 
+        /// help
         /// </summary>
         public void workStationSimulationRunner()
         {
