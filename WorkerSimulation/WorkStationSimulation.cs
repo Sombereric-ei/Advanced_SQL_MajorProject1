@@ -13,6 +13,9 @@ namespace WorkerSimulation
         WorkerInformation workerInformation = new WorkerInformation();
         private bool workStationRunning = true;
         private int lampFailureCounter = 0;
+        /// <summary>
+        /// 
+        /// </summary>
         public void workStationSimulationRunner()
         {
             databaseWriter.workstationStatusWriter(
