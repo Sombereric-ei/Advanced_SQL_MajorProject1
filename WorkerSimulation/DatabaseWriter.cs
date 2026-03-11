@@ -17,6 +17,13 @@ namespace WorkerSimulation
         {
             connectionString = ConfigurationManager.ConnectionStrings["FogLampDB"].ConnectionString;
         }
+        /// <summary>
+        /// writes the workstations status to the databaase
+        /// </summary>
+        /// <param name="WorkstationID">workstation id who created the log</param>
+        /// <param name="WorkerID">the workers id</param>
+        /// <param name="LogType">the type of log made in the system</param>
+        /// <param name="logMessage">the message attached to the log</param>
         public void workstationStatusWriter(int WorkstationID, int WorkerID, string LogType, string logMessage)
         {
             //creates the connection to the database
