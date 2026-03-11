@@ -29,7 +29,7 @@ namespace WorkerSimulation
             //creates the connection to the database
             using (SqlConnection connection = new SqlConnection(connectionString))
             //creates the procedure command
-            using (SqlCommand command = new SqlCommand("sp_CheckWorkerLogin", connection))
+            using (SqlCommand command = new SqlCommand("CheckWorkerLogin", connection))
             {
                 command.CommandType = CommandType.StoredProcedure;
 
